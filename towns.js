@@ -4,7 +4,20 @@ $(document).ready(function() {
 
 $(document).ready(function() { $('#btnAdd').click(addTown) });
 
-$(document).ready(function() { $('#btnShuffle').click(shuffleTowns); });
+
+$(document).ready(function() { 
+	$('#btnShuffle').click(shuffleTowns); 
+});
+
+
+
+
+
+
+  function sayHello (){
+	console.log("Hello")
+  }
+
 
 
 function deleteTown() {
@@ -27,7 +40,7 @@ function deleteTown() {
 function shuffleTowns() {
    
 	let towns = $('#towns option').toArray(); 
-	console.log(towns);
+
 
 	$('#towns').empty();
 
